@@ -1,0 +1,31 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<!--<link rel="import" href="../../bower_components/polymer/lib/elements/dom-if.html">-->
+<!--<link rel="import" href="../../bower_components/polymer/lib/elements/dom-repeat.html">-->
+
+<dom-module id="fp-app-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /** @polymerElement */
+    class FpAppApp extends Polymer.Element {
+      static get is() { return 'fp-app-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'fp-app-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(FpAppApp.is, FpAppApp);
+  </script>
+</dom-module>

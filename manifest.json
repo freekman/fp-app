@@ -1,0 +1,6 @@
+{
+  "name": "fp-app",
+  "short_name": "fp-app",
+  "start_url": "/",
+  "display": "standalone"
+}
